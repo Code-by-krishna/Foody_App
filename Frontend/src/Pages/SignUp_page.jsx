@@ -35,7 +35,7 @@ const SignUp_page = () => {
             // console.log("✅ Form is valid:", UserData);
             setErrors({});
 
-            const response = await axios.post('http://localhost:3000/api/signup', UserData);
+            const response = await axios.post('https://foody-app-backend-ed4g.onrender.com/api/signup', UserData);
             if (response.status == 201) {
                 alert(response?.data?.msg || "User created successfully");
                 navigate('/login');

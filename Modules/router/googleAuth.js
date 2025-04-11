@@ -22,7 +22,7 @@ router.get(
 
     // Send JWT to frontend (update to match your front-end logic)
 
-    res.redirect(`http://localhost:5174/dashboard?token=${token}`);
+    res.redirect(`https://foody-app-frontend.onrender.com/dashboard?token=${token}`);
   }
 );
 

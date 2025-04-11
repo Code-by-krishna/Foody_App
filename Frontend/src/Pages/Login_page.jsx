@@ -31,7 +31,7 @@ const Login_page = () => {
             console.log("✅ Form is valid:", UserData);
             setErrors({});
 
-            const response = await axios.post('http://localhost:3000/api/login', UserData);
+            const response = await axios.post('https://foody-app-backend-ed4g.onrender.com/api/login', UserData);
             alert(response?.data?.msg || "Login successfully");
             // console.log(response?.data);
             const token = response?.data?.token;
@@ -55,7 +55,7 @@ const Login_page = () => {
     }
 
     const handleGoogleLogin = () => {
-        window.location.href = "http://localhost:3000/auth/google";
+        window.location.href = "https://foody-app-backend-ed4g.onrender.com/auth/google";
     };
 
     return (

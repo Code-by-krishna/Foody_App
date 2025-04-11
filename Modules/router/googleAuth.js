@@ -22,7 +22,7 @@ router.get(
 
     // Send JWT to frontend (update to match your front-end logic)
 
-    res.redirect(`http://localhost:5174/?token=${token}`);
+    res.redirect(`http://localhost:5174/dashboard?token=${token}`);
   }
 );
 

@@ -37,7 +37,7 @@ const Login_page = () => {
             const token = response?.data?.token;
             localStorage.setItem('token', token);
 
-            navigate('/');
+            navigate('/dashboard');
         } catch (error) {
             if (error.name === "ValidationError") {
                 const validationErrors = {};
